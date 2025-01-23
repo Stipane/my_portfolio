@@ -1,28 +1,8 @@
-document.write('\
+document.write(
+  '\
     \
     <div class="mainTitle">\
-        <div class="headerBackground2">\
-          <div class="title">\
-            <h1>Edmund McKie</h1>\
-          </div>\
-          <div class="title-job">\
-            <p>Full Stack Web Developer</p>\
-          </div>\
-          <div class="title-announce">\
-            <hr />\
-            <p>\
-              I am an avid web developer that has the necessary skills to create modern, responsive web sites, incorporating UI/UX & SEO. I have excellent knowledge and expertise\
-              in HTML, CSS, JavaScript, React, Python, Django & SQL.\
-            </p>\
-            <hr />\
-          </div>\
-          <div id="cv">\
-            <button>\
-              <a class="linkCv" href="./files/EMcKie_Resume2024PDF.pdf">Download C.V.</a>\
-            </button>\
-          </div>\
-        </div>\
-        <div class="portrait-social">\
+    <div class="portrait-social">\
           <div class="portrait" id="portrait">\
             <img src="./images/portrait-photo.jpg" alt="photo of Edmund McKie" />\
           </div>\
@@ -47,5 +27,26 @@ document.write('\
             </div>\
           </div>\
         </div>\
-      </div>\
-    ');
+        <div class="headerBackground2">\
+          <div class="title">\
+            <h1>Edmund McKie</h1>\
+          </div>\
+          <div class="title-job">\
+            <p>Full Stack Web Developer</p>\
+          </div>\
+          <div class="title-announce">\
+            <hr />\
+            <p>\
+              I am an avid web developer that has the necessary skills to create modern, responsive web sites, incorporating UI/UX & SEO. I have excellent knowledge and expertise\
+              in HTML, CSS, JavaScript, React, Python, Django & SQL.\
+            </p>\
+            <hr />\
+          </div>\
+          <div id="cv">\
+            <button>\
+              <a class="linkCv" href="./files/EMcKie_Resume2024PDF.pdf">Download C.V.</a>\
+            </button>\
+          </div>\
+        </div>\
+      </div>'
+);

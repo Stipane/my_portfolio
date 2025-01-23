@@ -63,7 +63,7 @@ body {
 /*Main Title Section*/
 .mainTitle {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row-reverse wrap;
   justify-content: center;
   margin: 120px auto 0 auto;
   background-color: #000;
@@ -75,7 +75,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  width: 45%;
+  /* width: 45%; */
   margin: 100px 0;
 }
 
@@ -196,7 +196,6 @@ body {
 #cv {
   display: flex;
   align-items: center;
-  width: 30%;
   margin: auto;
   padding: 10px 15px;
 }
@@ -422,7 +421,8 @@ body {
 
 /* Contact Section */
 #contact {
-  margin: auto;
+  /* margin: auto; */
+
 }
 .contact {
   display: flex;
@@ -430,13 +430,13 @@ body {
   font-size: 2.25rem;
   color: rebeccapurple;
   width: 100%;
-  display: flex;
 }
 
 .contactDivs {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  margin: auto;
+  gap: 70px;
 }
 .contactHeading {
   text-align: center;
@@ -448,7 +448,7 @@ body {
 .wrapperContact {
   display: flex;
   flex-flow: column wrap;
-  width: 40%;
+  /* width: 40%; */
   justify-items: center;
   background-color: #e7dff5;
   padding: 30px;
@@ -457,8 +457,8 @@ body {
 }
 
 .wrapperDetails {
-  align-content: center;
-  width: 40%;
+  /* align-content: center; */
+  /* width: 40%; */
   justify-content: center;
   margin-left: 100px;
   padding: 30px 30px 30px 150px;
@@ -541,17 +541,30 @@ footer {
   }
 } */
 
-@media screen and (min-width: 1600px) {
-  .wrappercontact,
+@media screen and (max-width: 1600px) {
+  /* .wrappercontact, */
   .wrapperDetails {
-    width: 40%;
+    font-size: 1.2rem;
+    margin: auto;
   }
 }
+
+@media screen and (max-width: 1600px) {
+  .wrapperContact {
+      /* margin: 0 auto 50px auto; */
+      height: 50%;
+      width: 50%;    
+    }
+    #message {
+      height: 50%;
+    }
+  }
 
 @media screen and (max-width: 1600px) {
   .wrapperContact,
   .wrapperDetails {
     margin: auto;
+    justify-items: center;
   }
 }
 
@@ -568,5 +581,61 @@ footer {
     font-size: 1rem;
     margin: auto;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .projectView, .image2 {
+    height: 50%;
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .wrapperLanguages {
+    margin: auto;
+  }
+
+  .skew-rear, .skew {
+    margin: auto;
+    height: 50%;
+    width: 50%;
+  }
+
+  .skew > img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .skew > h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .mainTitle {
+    margin: auto;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .headerBackground2 {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #cv > button {
+    font-size: 1rem;
+    margin: auto;
+}
+}
+
+@media screen and (max-width: 1600px) {
+  #cv a {
+    color: black;
   }
 }
