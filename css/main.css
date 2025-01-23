@@ -126,7 +126,6 @@ body {
 .portrait {
   display: flex;
   justify-content: center;
- 
 }
 
 .portrait img {
@@ -278,7 +277,6 @@ body {
 
 .about {
   margin: 100px auto 400px auto;
-
 }
 .wrapper {
   display: flex;
@@ -300,6 +298,8 @@ body {
 }
 
 .education {
+  display: flex;
+  flex-flow: column wrap;
   padding: 10px;
 }
 
@@ -309,6 +309,8 @@ body {
 }
 
 .personal {
+  display: flex;
+  flex-flow: column wrap;
   padding: 10px;
 }
 
@@ -420,7 +422,6 @@ body {
 
 /* Contact Section */
 #contact {
-  width: 80%;
   margin: auto;
 }
 .contact {
@@ -533,3 +534,39 @@ footer {
 }
 
 /* @Media Queries */
+
+/* @media screen and (min-width: 900px) {
+  article {
+    padding: 1rem 3rem;
+  }
+} */
+
+@media screen and (min-width: 1600px) {
+  .wrappercontact,
+  .wrapperDetails {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .wrapperContact,
+  .wrapperDetails {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #about {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .personal,
+  .education,
+  .skillsWrapper {
+    font-size: 1rem;
+    margin: auto;
+    text-align: center;
+  }
+}
