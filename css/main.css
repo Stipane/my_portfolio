@@ -422,7 +422,6 @@ body {
 /* Contact Section */
 #contact {
   /* margin: auto; */
-
 }
 .contact {
   display: flex;
@@ -436,7 +435,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   margin: auto;
-  gap: 70px;
+  gap: 100px;
 }
 .contactHeading {
   text-align: center;
@@ -448,7 +447,6 @@ body {
 .wrapperContact {
   display: flex;
   flex-flow: column wrap;
-  /* width: 40%; */
   justify-items: center;
   background-color: #e7dff5;
   padding: 30px;
@@ -457,11 +455,8 @@ body {
 }
 
 .wrapperDetails {
-  /* align-content: center; */
-  /* width: 40%; */
   justify-content: center;
   margin-left: 100px;
-  padding: 30px 30px 30px 150px;
   border-radius: 15px;
   margin: 20px;
 }
@@ -541,78 +536,9 @@ footer {
   }
 } */
 
-@media screen and (max-width: 1600px) {
-  /* .wrappercontact, */
-  .wrapperDetails {
-    font-size: 1.2rem;
-    margin: auto;
-  }
-}
+/* Header */
 
-@media screen and (max-width: 1600px) {
-  .wrapperContact {
-      /* margin: 0 auto 50px auto; */
-      height: 50%;
-      width: 50%;    
-    }
-    #message {
-      height: 50%;
-    }
-  }
-
-@media screen and (max-width: 1600px) {
-  .wrapperContact,
-  .wrapperDetails {
-    margin: auto;
-    justify-items: center;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  #about {
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .personal,
-  .education,
-  .skillsWrapper {
-    font-size: 1rem;
-    margin: auto;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .projectView, .image2 {
-    height: 50%;
-    width: 75%;
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .wrapperLanguages {
-    margin: auto;
-  }
-
-  .skew-rear, .skew {
-    margin: auto;
-    height: 50%;
-    width: 50%;
-  }
-
-  .skew > img {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .skew > h3 {
-    font-size: 1rem;
-  }
-}
+/* Main Title */
 
 @media screen and (max-width: 1600px) {
   .mainTitle {
@@ -631,11 +557,98 @@ footer {
   #cv > button {
     font-size: 1rem;
     margin: auto;
-}
+  }
 }
 
 @media screen and (max-width: 1600px) {
   #cv a {
     color: black;
+  }
+}
+
+/* Languages */
+
+@media screen and (max-width: 1600px) {
+  .wrapperLanguages {
+    margin: auto;
+    text-align: center;
+  }
+
+  .skew-rear,
+  .skew {
+    margin: auto;
+    height: 50%;
+    width: 50%;
+  }
+
+  .skew > img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .skew > h3 {
+    font-size: 1rem;
+  }
+}
+
+/* About */
+
+@media screen and (min-width: 1600px) {
+  #about {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .personal,
+  .education,
+  .skillsWrapper {
+    font-size: 1rem;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+/* Projects */
+
+@media screen and (max-width: 1600px) {
+  .projectView,
+  .image2 {
+    height: 50%;
+    width: 75%;
+    margin: auto;
+  }
+
+  .projects {
+    margin: auto;
+  }
+}
+
+/* Contact */
+
+@media screen and (max-width: 1600px) {
+  .wrapperDetails {
+    font-size: 1.2rem;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .wrapperContact {
+    height: 50%;
+    width: 50%;
+  }
+
+  #message {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .wrapperContact,
+  .wrapperDetails {
+    margin: auto;
+    justify-items: center;
   }
 }
