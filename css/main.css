@@ -577,16 +577,13 @@ footer {
   .skew-rear,
   .skew {
     margin: auto;
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
   }
 
   .skew > img {
     display: none;
   }
-}
-
-@media screen and (max-width: 1600px) {
   .skew > h3 {
     font-size: 1rem;
   }
@@ -613,11 +610,13 @@ footer {
 /* Projects */
 
 @media screen and (max-width: 1600px) {
-  .projectView,
-  .image2 {
+  .projectView {
     height: 50%;
-    width: 75%;
+    /* width: 75%; */
     margin: auto;
+  }
+  .image2 {
+    width: 75%;
   }
 
   .projects {
