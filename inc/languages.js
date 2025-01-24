@@ -1,4 +1,5 @@
-    document.write('\
+document.write(
+  '\
       \
 <section id="languages">\
         <div class="language-title">\
@@ -14,7 +15,7 @@
           </div>\
           <div class="skew-rear">\
             <div id="js" class="skew">\
-              <h3>JavaScript</h3>\
+              <h3 class="language-header">JavaScript</h3>\
               <img src="./images/Languages/js-icon.png" alt="" />\
             </div>\
           </div>\
@@ -43,5 +44,5 @@
             </div>\
           </div>\
         </div>\
-      </section>');
-
+      </section>'
+);

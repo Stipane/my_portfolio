@@ -420,9 +420,7 @@ body {
 }
 
 /* Contact Section */
-#contact {
-  /* margin: auto; */
-}
+
 .contact {
   display: flex;
   flex-flow: column wrap;
@@ -538,6 +536,13 @@ footer {
 
 /* Header */
 
+@media screen and (max-width: 768px) {
+  .links {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
 /* Main Title */
 
 @media screen and (max-width: 1600px) {
@@ -568,7 +573,7 @@ footer {
 
 /* Languages */
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 768px) {
   .wrapperLanguages {
     margin: auto;
     text-align: center;
@@ -577,15 +582,24 @@ footer {
   .skew-rear,
   .skew {
     margin: auto;
-    height: 100%;
-    width: 100%;
   }
 
-  .skew > img {
+  /* .skew > img {
     display: none;
-  }
-  .skew > h3 {
+  } */
+
+  
+}
+/* These following 2 media queries not working ????????? */
+@media screen and (max-width: 1600px) {
+  h2 {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .language-header {
+    font-size: 10px;
   }
 }
 
