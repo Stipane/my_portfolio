@@ -536,19 +536,30 @@ footer {
 
 /* Header */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .links {
     display: flex;
     flex-flow: row wrap;
   }
-}
+} */
 
 /* Main Title */
 
 @media screen and (max-width: 1600px) {
   .mainTitle {
-    margin: auto;
+    margin: auto 0;
     font-size: 1rem;
+    padding: 250px 0 20px 0;
+  }
+
+  .portrait-social {
+    margin: auto 0;
+    padding: 0;
+  }
+
+  .headerBackground2 {
+    margin: auto 0;
+    padding: 0;
   }
 }
 
@@ -587,8 +598,6 @@ footer {
   /* .skew > img {
     display: none;
   } */
-
-  
 }
 /* These following 2 media queries not working ????????? */
 @media screen and (max-width: 1600px) {
