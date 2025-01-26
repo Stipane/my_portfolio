@@ -528,12 +528,6 @@ footer {
 
 /* @Media Queries */
 
-/* @media screen and (min-width: 900px) {
-  article {
-    padding: 1rem 3rem;
-  }
-} */
-
 /* Header */
 
 @media screen and (max-width: 768px) {
@@ -543,12 +537,57 @@ footer {
   }
 }
 
-/* Main Title */
-
+/* Global */
 @media screen and (max-width: 1600px) {
   .mainTitle {
     margin: auto;
     font-size: 1rem;
+  }
+  #cv > button {
+    font-size: 1rem;
+    margin: auto;
+  }
+  #cv a {
+    color: black;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .language-header {
+    font-size: 10px;
+  }
+  #about {
+    margin: auto;
+  }
+  .personal,
+  .education,
+  .skillsWrapper {
+    font-size: 1rem;
+    margin: auto;
+    text-align: center;
+  }
+  .projectView {
+    height: 50%;
+    margin: auto;
+  }
+  .image2 {
+    width: 75%;
+  }
+  .wrapperDetails {
+    font-size: 1.2rem;
+    margin: auto;
+  }
+  .wrapperContact {
+    height: 50%;
+    width: 50%;
+  }
+  #message {
+    height: 50%;
+  }
+  .wrapperContact,
+  .wrapperDetails {
+    margin: auto;
+    justify-items: center;
   }
 }
 
@@ -556,18 +595,8 @@ footer {
   .headerBackground2 {
     width: 45%;
   }
-}
-
-@media screen and (max-width: 1600px) {
-  #cv > button {
-    font-size: 1rem;
+  .projects {
     margin: auto;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  #cv a {
-    color: black;
   }
 }
 
@@ -582,86 +611,18 @@ footer {
   .skew-rear,
   .skew {
     margin: auto;
-  }
-
-  /* .skew > img {
-    display: none;
-  } */
-
-  
+  }  
 }
 /* These following 2 media queries not working ????????? */
-@media screen and (max-width: 1600px) {
+/* @media screen and (max-width: 1600px) {
   h2 {
     font-size: 1rem;
   }
-}
+} */
 
-@media screen and (max-width: 1600px) {
+/* @media screen and (max-width: 1600px) {
   .language-header {
     font-size: 10px;
   }
-}
+} */
 
-/* About */
-
-@media screen and (min-width: 1600px) {
-  #about {
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .personal,
-  .education,
-  .skillsWrapper {
-    font-size: 1rem;
-    margin: auto;
-    text-align: center;
-  }
-}
-
-/* Projects */
-
-@media screen and (max-width: 1600px) {
-  .projectView {
-    height: 50%;
-    /* width: 75%; */
-    margin: auto;
-  }
-  .image2 {
-    width: 75%;
-  }
-
-  .projects {
-    margin: auto;
-  }
-}
-
-/* Contact */
-
-@media screen and (max-width: 1600px) {
-  .wrapperDetails {
-    font-size: 1.2rem;
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .wrapperContact {
-    height: 50%;
-    width: 50%;
-  }
-
-  #message {
-    height: 50%;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .wrapperContact,
-  .wrapperDetails {
-    margin: auto;
-    justify-items: center;
-  }
-}
