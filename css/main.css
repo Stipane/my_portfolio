@@ -622,15 +622,7 @@ footer {
   .skew-rear,
   .skew {
     margin: auto;
-<<<<<<< HEAD
   }  
-=======
-  }
-
-  /* .skew > img {
-    display: none;
-  } */
->>>>>>> 81ebad3b740b4b211225ba22d89dd15c9e62c770
 }
 /* These following 2 media queries not working ????????? */
 /* @media screen and (max-width: 1600px) {
