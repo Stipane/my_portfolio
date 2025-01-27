@@ -530,18 +530,29 @@ footer {
 
 /* Header */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .links {
     display: flex;
     flex-flow: row wrap;
   }
-}
+} */
 
 /* Global */
 @media screen and (max-width: 1600px) {
   .mainTitle {
-    margin: auto;
+    margin: auto 0;
     font-size: 1rem;
+    padding: 250px 0 20px 0;
+  }
+
+  .portrait-social {
+    margin: auto 0;
+    padding: 0;
+  }
+
+  .headerBackground2 {
+    margin: auto 0;
+    padding: 0;
   }
   #cv > button {
     font-size: 1rem;
@@ -611,7 +622,15 @@ footer {
   .skew-rear,
   .skew {
     margin: auto;
+<<<<<<< HEAD
   }  
+=======
+  }
+
+  /* .skew > img {
+    display: none;
+  } */
+>>>>>>> 81ebad3b740b4b211225ba22d89dd15c9e62c770
 }
 /* These following 2 media queries not working ????????? */
 /* @media screen and (max-width: 1600px) {
