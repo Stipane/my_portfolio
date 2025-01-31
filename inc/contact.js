@@ -1,10 +1,12 @@
-document.write('\
+document.write(
+  '\
     \
     <section id="contact" class="contact">\
+      <div class="contactDivs">\
         <div>\
           <h2 class="contactHeading">Contact Me</h2>\
         </div>\
-        <div class="contactDivs">\
+        <div class="contactWrapper">\
           <div class="wrapperContact">\
             <form action="" class="form-control">\
               <div class="input-container">\
@@ -23,16 +25,18 @@ document.write('\
           </div>\
           <div class="wrapperDetails">\
             <div class="details">\
-              <p>Email:</p>\
-              <p class="detail">edmundmckie@gmail.com</p>\
-              <p>Phone:</p>\
-              <p class="detail">0478 613 685</p>\
-              <p>LinkedIn:</p>\
-              <p class="detail">\
-                <a href="https://www.linkedin.com/in/edmundmckie/">linkedin.com/in/edmundmckie/</a>\
-              </p>\
+                <p>Email:</p>\
+                <p class="detail">edmundmckie@gmail.com</p>\
+                <p>Phone:</p>\
+                <p class="detail">0478 613 685</p>\
+                <p>LinkedIn:</p>\
+                <p class="detail">\
+                  <a href="https://www.linkedin.com/in/edmundmckie/">linkedin.com/in/edmundmckie/</a>\
+                </p>\
             </div>\
           </div>\
+          </div>\
         </div>\
-      </section>\
-    ');
+    </section>\
+    '
+);

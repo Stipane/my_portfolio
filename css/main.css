@@ -63,7 +63,7 @@ body {
 /*Main Title Section*/
 .mainTitle {
   display: flex;
-  flex-flow: row-reverse wrap;
+  flex-flow: row wrap;
   justify-content: center;
   margin: 120px auto 0 auto;
   background-color: #000;
@@ -75,7 +75,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  /* width: 45%; */
+  width: 45%;
   margin: 100px 0;
 }
 
@@ -126,6 +126,7 @@ body {
 .portrait {
   display: flex;
   justify-content: center;
+ 
 }
 
 .portrait img {
@@ -196,6 +197,7 @@ body {
 #cv {
   display: flex;
   align-items: center;
+  width: 30%;
   margin: auto;
   padding: 10px 15px;
 }
@@ -276,6 +278,7 @@ body {
 
 .about {
   margin: 100px auto 400px auto;
+
 }
 .wrapper {
   display: flex;
@@ -297,8 +300,6 @@ body {
 }
 
 .education {
-  display: flex;
-  flex-flow: column wrap;
   padding: 10px;
 }
 
@@ -308,8 +309,6 @@ body {
 }
 
 .personal {
-  display: flex;
-  flex-flow: column wrap;
   padding: 10px;
 }
 
@@ -420,20 +419,23 @@ body {
 }
 
 /* Contact Section */
-
+#contact {
+  width: 80%;
+  margin: auto;
+}
 .contact {
   display: flex;
   flex-flow: column wrap;
   font-size: 2.25rem;
   color: rebeccapurple;
   width: 100%;
+  display: flex;
 }
 
 .contactDivs {
   display: flex;
-  flex-flow: row wrap;
-  margin: auto;
-  gap: 100px;
+  flex-flow: column wrap;
+  justify-content: space-between;
 }
 .contactHeading {
   text-align: center;
@@ -442,9 +444,15 @@ body {
   margin: 30px auto;
 }
 
+.contactWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
 .wrapperContact {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
+  width: 40%;
   justify-items: center;
   background-color: #e7dff5;
   padding: 30px;
@@ -453,10 +461,12 @@ body {
 }
 
 .wrapperDetails {
+  align-content: center;
+  width: 40%;
   justify-content: center;
-  margin-left: 100px;
+  padding: 30px 30px 30px 50px;
   border-radius: 15px;
-  margin: 20px;
+  margin: 20px 20px 20px 100px;
 }
 
 .details {
@@ -527,113 +537,210 @@ footer {
 }
 
 /* @Media Queries */
-
-/* Header */
-
-/* @media screen and (max-width: 768px) {
-  .links {
-    display: flex;
-    flex-flow: row wrap;
-  }
-} */
-
-/* Global */
 @media screen and (max-width: 1600px) {
+  /* * {
+    margin: auto;
+  } */
+
+  .header {
+    position: relative;
+  }
+
   .mainTitle {
-    margin: auto 0;
-    font-size: 1rem;
-    padding: 250px 0 20px 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column-reverse;
+    padding: 20px 10px;
   }
 
-  .portrait-social {
-    margin: auto 0;
-    padding: 0;
+  .title h1 {
+    font-size: 2rem;
   }
 
-  .headerBackground2 {
-    margin: auto 0;
-    padding: 0;
+  .title-job p {
+    font-size: 1.5rem;
   }
-  #cv > button {
-    font-size: 1rem;
-    margin: auto;
-  }
-  #cv a {
-    color: black;
-  }
-  h2 {
+
+  .title-announce p {
     font-size: 1rem;
   }
-  .language-header {
-    font-size: 10px;
+
+  .headerBackground2, .portrait-social {
+    display: flex;
+    flex-flow: column;
+    font-size: 14px;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
   }
-  #about {
-    margin: auto;
+
+  .linkCv {
+    font-size: 12px;
+    width: 100%;
   }
-  .personal,
-  .education,
-  .skillsWrapper {
-    font-size: 1rem;
-    margin: auto;
-    text-align: center;
+
+  #cv {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
   }
-  .projectView {
-    height: 50%;
-    margin: auto;
+
+  #linkedin {
+    justify-content: left;
   }
-  .image2 {
-    width: 75%;
+
+  /* .phone, .email, .linkedin {
+    margin: 0;
+  } */
+
+  /* .phone, span {
+    margin-left: 5px;
+  } */
+
+  #languages {
+    margin-top: 20px;
   }
-  .wrapperDetails {
-    font-size: 1.2rem;
-    margin: auto;
-  }
-  .wrapperContact {
-    height: 50%;
-    width: 50%;
-  }
-  #message {
-    height: 50%;
-  }
-  .wrapperContact,
-  .wrapperDetails {
-    margin: auto;
-    justify-items: center;
-  }
+
+  #languages h2 {
+   font-size: 1.5rem;
 }
 
-@media screen and (min-width: 1600px) {
-  .headerBackground2 {
-    width: 45%;
-  }
-  .projects {
-    margin: auto;
-  }
+.wrapperLanguages {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  gap: 20px;
 }
 
-/* Languages */
+#html .languageH3 {
+  font-size: 16px;
+}
+
+.skew img {
+  height: 50px;
+}
+
+.skew-rear, .skew {
+  height: 150px;
+  width: 225px;
+}
+
+.wrapper {
+  margin: auto;
+  gap: 20px;
+}
+
+#about {
+  margin-bottom: 20px;
+}
+
+.aboutHeader {
+  font-size: 1.5rem;
+}
+
+.heading, .skillHeader {
+  font-size: 1rem;
+}
+
+.heading, .skillHeader {
+  text-align: center;
+}
+
+.personal-p {
+  font-size: 14px;
+}
+
+.education-p {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.skill-inner-p {
+  font-size: 14px;
+}
+
+.banner {
+  font-size: 14px;
+}
+
+#projects {
+  margin-bottom: 20px;
+}
+
+.projectView {
+  width: 100%;
+}
+
+#projects h2 {
+  font-size: 1.5rem;
+}
+
+.wrapperProjects, .image2 {
+  width: 100%;
+  height: 60%;
+}
+
+#project1 p {
+  font-size: 1.2rem;
+}
+
+#project2 p {
+  font-size: 1.2rem;
+}
+
+#project3 p {
+  font-size: 1.2rem;
+}
+
+.contactHeading {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+#contact {
+  margin: auto
+}
+
+.contactDivs {
+  font-size: large;
+}
+
+.wrapperContact {
+  width: 100%;
+}
+
+.wrapperDetails {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.details {
+  text-align: center;
+}
+
+#message {
+  font-size: 16px;
+  margin: auto;
+}
+
+.submit {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.footer {
+  margin: auto;
+}
+
+}
 
 @media screen and (max-width: 768px) {
-  .wrapperLanguages {
-    margin: auto;
-    text-align: center;
+  .links {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
   }
-
-  .skew-rear,
-  .skew {
-    margin: auto;
-  }  
 }
-/* These following 2 media queries not working ????????? */
-/* @media screen and (max-width: 1600px) {
-  h2 {
-    font-size: 1rem;
-  }
-} */
-
-/* @media screen and (max-width: 1600px) {
-  .language-header {
-    font-size: 10px;
-  }
-} */
-
