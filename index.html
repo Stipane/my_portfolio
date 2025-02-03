@@ -8,30 +8,243 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/84d06cdb8f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Edmund McKie | Portfolio</title>
   </head>
   <body>
-    <div class="container">
+    <div class="">
       <!------------Header Section------------>
-      <script src="./inc/header.js"></script>
+      <header class="header">
+        <nav class="navBar">
+          <div class="links">
+            <button class="linkButton"><a class="link" href="#">Home</a></button>
+            <button class="linkButton"><a class="link" href="#languages">Skills</a></button>
+            <button class="linkButton"><a class="link" href="#about">About Me</a></button>
+            <button class="linkButton"><a class="link" href="#contact">Contact</a></button>
+          </div>
+        </nav>
+      </header>
       <!------------End Header Section------------>
       <!------------Main Title Section------------>
-      <script src="./inc/main.js"></script>
+      <div class="mainTitle">
+        <div class="headerBackground2">
+          <div class="title">
+            <h1>Edmund McKie</h1>
+          </div>
+          <div class="title-job">
+            <p>Full Stack Web Developer</p>
+          </div>
+          <div class="title-announce">
+            <hr />
+            <p>
+              I am an avid web developer that has the necessary skills to create modern, responsive web sites, incorporating UI/UX & SEO. I have excellent knowledge and expertise\
+              in HTML, CSS, JavaScript, React, Python, Django & SQL.
+            </p>
+            <hr />
+          </div>
+          <div id="cv">
+            <button>
+              <a class="linkCv" href="./files/EMcKie_Resume2024PDF.pdf">Download C.V.</a>
+            </button>
+          </div>
+        </div>
+        <div class="portrait-social">
+          <div class="portrait" id="portrait">
+            <img src="./images/portrait-photo.jpg" alt="photo of Edmund McKie" />
+          </div>
+          <div class="social">
+            <div id="social-email">
+              <div class="email">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <span>edmundmckie@gmail.com</span>
+            </div>
+            <div id="phone">
+              <div class="phone">
+                <i class="fa-solid fa-mobile"></i>
+              </div>
+              <span>0478 613 685</span>
+            </div>
+            <div id="linkedin">
+              <div class="linkedin">
+                <i class="fa-brands fa-linkedin" height="48px"></i>
+              </div>
+              <a href="https://www.linkedin.com/in/edmundmckie/"><span>linkedin.com/in/edmundmckie/</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
       <!------------End Main Title Section------------>
       <!------------Languages Section------------>
-      <script src="./inc/languages.js"></script>
+      <section id="languages">
+        <div class="language-title">
+          <h2>Languages</h2>
+        </div>
+        <div class="wrapperLanguages">
+          <div class="skew-rear">
+            <div id="html" class="skew">
+              <h3 class="languageH3">HTML & CSS</h3>
+              <img src="./images/Languages/html5-icon.png" alt="" />
+              <img src="./images/Languages/css-icon.png" alt="" />
+            </div>
+          </div>
+          <div class="skew-rear">
+            <div id="html" class="skew">
+              <h3 class="languageH3">JavaScript</h3>
+              <img src="./images/Languages/js-icon.png" alt="" />
+            </div>
+          </div>
+          <div class="skew-rear">
+            <div id="html" class="skew">
+              <h3 class="languageH3">React</h3>
+              <img src="./images/Languages/react-icon.png" alt="" />
+            </div>
+          </div>
+          <div class="skew-rear">
+            <div id="html" class="skew">
+              <h3 class="languageH3">Python</h3>
+              <img src="./images/Languages/python-icon.png" alt="" />
+            </div>
+          </div>
+          <div class="skew-rear">
+            <div id="html" class="skew">
+              <h3 class="languageH3">SQL</h3>
+              <img src="./images/Languages/sql-icon.png" alt="" />
+            </div>
+          </div>
+          <div class="skew-rear">
+            <div id="html" class="skew">
+              <h3 class="languageH3">Django</h3>
+              <img src="./images/Languages/django-icon.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
       <!------------End Languages Section------------>
       <!------------About Me Section------------>
-      <script src="./inc/about.js"></script>
+      <section id="about" class="about">
+        <div >
+          <h2 class="aboutHeader">About Me</h2>
+        </div>
+        <div class="wrapper">
+          <div class="personal">
+            <h3 class="heading">Personal Info</h3>
+            <p class="personal-p">Name: Edmund McKie</p>
+            <p class="personal-p">Age: 60</p>
+          </div>
+          <div class="education">
+            <h3 class="heading">Education</h3>
+            <p class="education-p">Lumify Learn: Cert IV Information Technology (Web Development).</p>
+            <p class="education-p">Learning People: Full Stack Web Developer.</p>
+          </div>
+          <div class="skillsWrapper">
+            <h3 class="skillHeader">Skills</h3>
+            <div class="Skills">
+              <div class="skill-inner">
+                <p class="skill-inner-p">HTML, CSS</p>
+                <p class="skill-inner-p">JavaScript</p>
+              </div>
+              <div class="skill-inner">
+                <p class="skill-inner-p">React.js</p>
+                <p class="skill-inner-p">Python</p>
+              </div>
+              <div class="skill-inner">
+                <p class="skill-inner-p">SQL</p>
+                <p class="skill-inner-p">Django</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skillBanners">
+          <div class="banner hover:scale-110">HTML, CSS</div>
+          <div class="banner hover:scale-110">JavaScript</div>
+          <div class="banner hover:scale-110">React.js</div>
+          <div class="banner hover:scale-110">Python</div>
+          <div class="banner hover:scale-110">SQL</div>
+          <div class="banner hover:scale-110">Django</div>
+        </div>
+      </section>
       <!------------End About Me Section------------>
       <!------------My Projects Section------------->
-      <script src="./inc/projects.js"></script>
+      <section id="projects w-full" class="projects">
+        <h2>My Projects</h2>
+        <div class="wrapperProjects w-full">
+          <div id="project1" class="projectView hover:scale-110">
+            <p>Project One</p>
+            <hr />
+            <img
+              src="./images/Projects/Retropot.jpg"
+              class="image2"
+              alt=""
+              style="border-radius: 15px"
+            />
+          </div>
+          <div id="project2" class="projectView hover:scale-110">
+            <p>Project Two</p>
+            <hr />
+            <img
+              src="./images/Projects/Retropot.jpg"
+              class="image2"
+              alt=""
+              style="border-radius: 15px"
+            />
+          </div>
+          <div id="project3" class="projectView hover:scale-110">
+            <p>Project Three</p>
+            <hr />
+            <img
+              src="./images/Projects/Retropot.jpg"
+              class="image2"
+              alt=""
+              style="border-radius: 15px"
+            />
+          </div>
+        </div>
+      </section>
       <!------------End My Projects Section------------>
       <!------------Contact Section------------>
-      <script src="./inc/contact.js"></script>
+      <section id="contact" class="contact">
+        <div class="contactDivs">
+          <div>
+            <h2 class="contactHeading">Contact Me</h2>
+          </div>
+          <div class="contactWrapper">
+            <div class="wrapperContact">
+              <form action="" class="form-control">
+                <div class="input-container">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div class="input-container">
+                  <label for="email">Email:</label>
+                  <input type="email" name="Email" id="email" />
+                </div>
+                <div>
+                  <textarea name="message" id="message" placeholder="Enter your message here..." rows="15" cols="50"></textarea>
+                </div>
+                <button class="submit">Submit</button>
+              </form>
+            </div>
+            <div class="wrapperDetails">
+              <div class="details">
+                  <p>Email:</p>
+                  <p class="detail">edmundmckie@gmail.com</p>
+                  <p>Phone:</p>
+                  <p class="detail">0478 613 685</p>
+                  <p>LinkedIn:</p>
+                  <p class="detail">
+                    <a href="https://www.linkedin.com/in/edmundmckie/">linkedin.com/in/edmundmckie/</a>
+                  </p>
+              </div>
+            </div>
+            </div>
+          </div>
+      </section>
       <!------------End Contact Section------------>
       <!-----------Footer Section------------>
-      <script src="./inc/footer.js"></script>
+      <footer class="footer">
+        <p>Copyright &copy; Edmund McKie <span id="year"></span> (All Rights Reserved)</p>
+      </footer>
       <!------------End Footer Section------------>
     </div>
     <script src="./scripts/main.js"></script>

@@ -13,35 +13,35 @@ skewElements.forEach((element) => {
 });
 
 // PROJECT VIEWS
-const grow = document.querySelectorAll('.projectView');
-grow.forEach((element) => {
-  element.addEventListener('mouseover', () => {
-    element.style.width = '687px';
-    element.style.height = '528px';
-  });
-});
+// const grow = document.querySelectorAll('.projectView');
+// grow.forEach((element) => {
+//   element.addEventListener('mouseover', () => {
+//     element.style.width = '687px';
+//     element.style.height = '528px';
+//   });
+// });
 
-const revert = document.querySelectorAll('.projectView');
-revert.forEach((element) => {
-  element.addEventListener('mouseout', () => {
-    element.style.width = '';
-    element.style.height = '';
-  });
-});
+// const revert = document.querySelectorAll('.projectView');
+// revert.forEach((element) => {
+//   element.addEventListener('mouseout', () => {
+//     element.style.width = '';
+//     element.style.height = '';
+//   });
+// });
 
-const animate = document.querySelectorAll('.banner');
-animate.forEach(element => {
-  element.addEventListener('mouseover', () => {
-    element.style.width = '160px';
-    element.style.height = '60px';
-  });
-});
+// const animate = document.querySelectorAll('.banner');
+// animate.forEach(element => {
+//   element.addEventListener('mouseover', () => {
+//     element.style.width = '160px';
+//     element.style.height = '60px';
+//   });
+// });
 
-const revert2 = document.querySelectorAll('.banner');
-revert2.forEach(element => {
-  element.addEventListener('mouseout', () => {
-    element.style.width = '';
-    element.style.height = '';
-  });
-});
+// const revert2 = document.querySelectorAll('.banner');
+// revert2.forEach(element => {
+//   element.addEventListener('mouseout', () => {
+//     element.style.width = '';
+//     element.style.height = '';
+//   });
+// });
 

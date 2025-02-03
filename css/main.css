@@ -65,7 +65,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 120px auto 0 auto;
   background-color: #000;
   padding: 200px 100px;
   gap: 50px;
@@ -330,7 +329,6 @@ body {
 }
 
 .skillHeader {
-  margin: 35px 0 11px 0;
   font-size: 2rem;
   color: red;
 }
@@ -354,7 +352,7 @@ body {
 
 .banner {
   height: 50px;
-  width: 150px;
+  width: auto;
   font-size: 1.4rem;
   font-weight: 600;
   border: solid 1px;
@@ -393,8 +391,7 @@ body {
 }
 
 .projectView img {
-  height: 300px;
-  transition: 1s;
+  height: auto;
 }
 
 .projects {
@@ -412,10 +409,6 @@ body {
 #project2 {
   align-content: center;
   justify-content: center;
-}
-
-.image2:hover {
-  height: 400px;
 }
 
 /* Contact Section */
